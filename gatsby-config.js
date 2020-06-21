@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `CS Logs`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Celestine Ekoh-Ordan`,
+      summary: `who lives and works in Lagos, Nigeria as a full-stack developer building useful things.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `A simple blog where I share my learnings about computer science.`,
+    siteUrl: `https://cslogs.ekohordan.com`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `ceo_ehis`,
     },
   },
   plugins: [
@@ -66,7 +66,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/photo.jpg`,
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -78,6 +78,6 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
