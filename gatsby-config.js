@@ -3,7 +3,7 @@ module.exports = {
     title: `CS Logs`,
     author: {
       name: `Celestine Ekoh-Ordan`,
-      summary: `who lives and works in Lagos, Nigeria as a full-stack developer building useful things.`,
+      summary: `who lives and works in Lagos, Nigeria as a full-stack developer.`,
     },
     description: `A simple blog where I share my learnings about computer science.`,
     siteUrl: `https://cslogs.ekohordan.com`,
@@ -42,9 +42,16 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
+          {
+            resolve: `gatsby-remark-katex`,
+            options: {
+              // Add any KaTeX options from https://github.com/KaTeX/KaTeX/blob/master/docs/options.md here
+              strict: `ignore`
+            }
+          },
+          `gatsby-remark-prismjs`,
         ],
       },
     },
@@ -60,11 +67,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Celestine Ekoh-Ordan - CS Logs`,
+        short_name: `CSLogs`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#0E95D3`,
         display: `minimal-ui`,
         icon: `content/assets/photo.jpg`,
       },

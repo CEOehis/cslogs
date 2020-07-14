@@ -2,7 +2,6 @@
 title: Hello World
 date: "2020-06-21T14:44:53.926Z"
 description: "Hello World"
-excerpt: bleh
 ---
 
 This is my first post on my this blog!
